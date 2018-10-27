@@ -12,4 +12,19 @@
   		<version>4.12</version>
   	</dependency>
   </dependencies>
+  <build>
+  <finalName>HybridHeizungRechner</finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>de.oderkerk.hybridheizungamortisierung.gui.MainGui</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
