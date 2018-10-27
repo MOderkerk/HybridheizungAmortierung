@@ -1,0 +1,22 @@
+language: java
+jdk:
+  - oraclejdk8
+  - openjdk8
+
+# safelist
+branches:
+  only:
+  - master
+sudo: false
+
+# cache the build tool's caches
+cache:
+  directories:
+  - $HOME/.m2
+  - $HOME/.gradle
+
+before_install:
+   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V 
+
+script:  
+  - mvn test 
