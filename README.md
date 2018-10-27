@@ -1,5 +1,5 @@
 # HybridheizungAmortierung
-Kleines Tool zur Optimales Einstellung einer Hybridheizung Öl Luftwärmepumpe um kostengünstig zu heizen.
+Kleines Tool zur Optimales Einstellung einer Hybridheizung Ã–l LuftwÃ¤rmepumpe um kostengÃ¼nstig zu heizen.
 
 
 Buildstatus : [![Build Status](https://travis-ci.org/MOderkerk/HybridheizungAmortierung.svg?branch=master)](https://travis-ci.org/MOderkerk/HybridheizungAmortierung)
