@@ -40,4 +40,27 @@ public class Rechner {
 	public float getHeizkosten(float primaerenergieBedarf, float heizoelpreis1kw) {
 		return primaerenergieBedarf * heizoelpreis1kw;
 	}
+
+	/**
+	 * Berechnung Wärmepumpenkosten
+	 * 
+	 * @param energiebedarf
+	 * @param strompreis
+	 * @return wärmepumpenkosten
+	 */
+	public float getWaermepumpenKosten(float energiebedarf, float strompreis) {
+		return ((energiebedarf * 0.8f) / 3) * strompreis;
+	}
+
+	/**
+	 * get Ölheizungskosten
+	 * 
+	 * @param energiebedarf
+	 * @param heizoelpreis1kw
+	 * @return Ölheizungskosten
+	 */
+	public float getOelheizungKosten(float energiebedarf, float heizoelpreis1kw) {
+
+		return ((energiebedarf * 0.9f)) * heizoelpreis1kw;
+	}
 }
