@@ -3,7 +3,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
 node('master')
 {
     stage('checkout') {
-     checkout scm ,extensions: [[$class: 'CleanBeforeCheckout']]
+     checkout scm 
     }
     
     stage('Build')
