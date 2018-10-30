@@ -13,10 +13,10 @@ node('master')
        }
     
     }
-    stage('Build')
+    stage('Build & Package')
     {
        withMaven(jdk: 'java', maven: 'maven') {
-        sh 'mvn test'  
+        sh 'mvn package'  
        }    
     }
     
