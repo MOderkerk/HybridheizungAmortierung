@@ -22,7 +22,7 @@ node('master')
     
     stage('Pack & Deploy')
     {
-      zip zipFile:'Amortiesierungsrechner.zip',archive : true,dir:'target/' 
+      zip archive: true, dir: '', glob: 'target/H*.jar', zipFile: 'Amortisierungsrechner.zip'
            
     }
     
