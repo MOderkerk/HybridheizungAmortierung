@@ -22,7 +22,11 @@ node('master')
     
     stage('Pack & Deploy')
     {
-      zip archive: true, dir: 'target/', glob: 'H*.jar', zipFile: 'Amortisierungsrechner.zip'
+      zip archive: true, dir: 'target/', glob: 'H*.jar', zipFile: 'HybridHeizungRechner.zip'
+      if (currentBuild.result == 'SUCCESS') 
+      { 
+          ftpPublisher alwaysPublishFromMaster: false, continueOnError: false, failOnError: false, publishers: [[configName: '49501-HybridHeizungRechner', transfers: [[asciiMode: false, cleanRemote: false, excludes: '', flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '/', remoteDirectorySDF: false, removePrefix: '', sourceFiles: 'HybridHeizungRechner.zip']], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true]]
+      }
            
     }
     
