@@ -22,7 +22,7 @@ node('master')
     
     stage('Pack & Deploy')
     {
-      archiveArtifacts artifacts: 'target/*.jar', onlyIfSuccessful: true
+      zip zipFile:'Amortiesierungsrechner.zip',archive : true,dir:'target/' 
            
     }
     
