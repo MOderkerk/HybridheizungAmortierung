@@ -1,5 +1,6 @@
 /**
  * All calculation functions
+ * 
  */
 /**
  * @author Odin

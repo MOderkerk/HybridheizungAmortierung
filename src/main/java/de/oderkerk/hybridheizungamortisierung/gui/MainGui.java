@@ -19,7 +19,7 @@ import javax.swing.event.ChangeListener;
 import de.oderkerk.hybridheizungamortisierung.rechner.Rechner;
 
 public class MainGui {
-
+//
 	private JFrame frmAmortisierungsrechner;
 	private JTextField textFieldHeizoelpreis;
 	private JTextField textFieldStrompreis;

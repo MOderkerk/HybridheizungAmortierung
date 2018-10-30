@@ -7,7 +7,7 @@ package de.oderkerk.hybridheizungamortisierung.rechner;
  *
  */
 public class Rechner {
-
+//
 	private final float heizoelKwH1L = 10.4f;
 
 	/**
@@ -24,7 +24,7 @@ public class Rechner {
 	 * Calculate Primary energy
 	 * 
 	 * @param jahresverbrauch
-	 * @return primärenergie
+	 * @return primï¿½renergie
 	 */
 	public float getPrimaerenergieBedarf(float jahresverbrauch) {
 		return jahresverbrauch * heizoelKwH1L;
@@ -42,22 +42,22 @@ public class Rechner {
 	}
 
 	/**
-	 * Berechnung Wärmepumpenkosten
+	 * Berechnung Wï¿½rmepumpenkosten
 	 * 
 	 * @param energiebedarf
 	 * @param strompreis
-	 * @return wärmepumpenkosten
+	 * @return wï¿½rmepumpenkosten
 	 */
 	public float getWaermepumpenKosten(float energiebedarf, float strompreis) {
 		return ((energiebedarf * 0.8f) / 3) * strompreis;
 	}
 
 	/**
-	 * get Ölheizungskosten
+	 * get ï¿½lheizungskosten
 	 * 
 	 * @param energiebedarf
 	 * @param heizoelpreis1kw
-	 * @return Ölheizungskosten
+	 * @return ï¿½lheizungskosten
 	 */
 	public float getOelheizungKosten(float energiebedarf, float heizoelpreis1kw) {
 
