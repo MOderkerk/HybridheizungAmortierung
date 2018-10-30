@@ -22,7 +22,7 @@ node('master')
     
     stage('Pack & Deploy')
     {
-       archive 'target/*.jar'
+      archiveArtifacts artifacts: 'target/*.jar', onlyIfSuccessful: true
            
     }
     
